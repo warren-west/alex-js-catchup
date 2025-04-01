@@ -1,0 +1,3 @@
+# In this file, you can choose files or folder to be excluded from the git repository.
+excludeMe.js
+excluded
