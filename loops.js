@@ -36,9 +36,6 @@ const phones = [
     { name: "Fairphone 5", rating: 5 },
 ]
 
-
-
-
 // loop through phone object
 for (let phone of phones) {
     // for each phone display the name
@@ -75,3 +72,38 @@ for (let phone of phones) {
 }
 
 // for...in (looping through objects)
+
+// for (let i = 0; i < 10; i++) {} // general
+// for (let something of someArray) {} // arrays
+// for (let something in someObject) {} // objects (but also arrays if you want the index instead of each element)
+
+const product = {
+    id: 1,
+    name: "iPhone X",
+    description: "A very reliable modern smartphone",
+    price: 19999,
+    color: "Silver steel",
+    hasExtraStorage: false,
+    is5G: true,
+    featureList: ["bluetooth", "NFC", "wireless charging"],
+}
+
+// Our object is to dynamically iterate through the properties of this object
+// and access each value from each property.
+
+for (let key in product) {
+    console.log(key)
+
+    console.log(product[key])
+}
+
+// using a for...in loop with an array - it gives us the index number values, not the value of each element in the array
+// Sometimes this is useful, not super common though.
+// for (let key in product.featureList) {
+//     console.log(key)
+// }
+
+
+const variable = [] // array
+const anotherVariable = {} // object
+{} // code block
